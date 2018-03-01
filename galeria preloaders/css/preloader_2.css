@@ -1,0 +1,18 @@
+.preloader2 {
+    width:40px;
+    height: 40px;
+    display: inline-box;
+    border: 5px solid #eee;
+    border-top: 5px solid #666;
+    border-radius: 50%;
+    position: relative;
+    animation: preload_2 2s linear infinite;
+}
+@keyframes preload_2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

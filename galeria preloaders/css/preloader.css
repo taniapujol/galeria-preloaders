@@ -1,0 +1,70 @@
+.preloader {
+    width: 40px;
+    height: 40px;
+    display: inline-box;
+    position: relative;
+    animation: preload 2s linear infinite;
+}
+
+.preloader span {
+    position: absolute;
+    background: rgb(20, 1, 1);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    transform-origin: center 20px;
+    margin-left: 16px;
+}
+
+.preloader span:nth-child(2) {
+    transform: rotate(36deg);
+    opacity: .1;
+}
+
+.preloader span:nth-child(3) {
+    transform: rotate(72deg);
+    opacity: .2;
+}
+
+.preloader span:nth-child(4) {
+    transform: rotate(108deg);
+    opacity: .3;
+}
+
+.preloader span:nth-child(5) {
+    transform: rotate(144deg);
+    opacity: .4;
+}
+
+.preloader span:nth-child(6) {
+    transform: rotate(180deg);
+    opacity: .5;
+}
+
+.preloader span:nth-child(7) {
+    transform: rotate(218deg);
+}
+
+.preloader span:nth-child(8) {
+    transform: rotate(252deg);
+    opacity: .6;
+}
+
+.preloader span:nth-child(9) {
+    transform: rotate(288deg);
+    opacity: .7;
+}
+
+.preloader span:nth-child(10) {
+    transform: rotate(324deg);
+    opacity: .8;
+}
+
+@keyframes preload {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
